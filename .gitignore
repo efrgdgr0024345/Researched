@@ -1,0 +1,15 @@
+.env
+.DS_Store
+.idea/
+.vscode/
+*.log
+
+# Runtime state and user-provided source files.
+data/state.json
+data/state.json.lock
+data/state.json.tmp.*
+data/sources/*.pdf
+
+# Keep empty runtime directories present.
+!data/.gitkeep
+!data/sources/.gitkeep

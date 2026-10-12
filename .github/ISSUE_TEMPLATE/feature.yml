@@ -1,0 +1,41 @@
+name: Product improvement
+about: Propose a user-visible improvement without weakening evidence controls
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What user problem or investigation failure does this address?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence or example
+      description: Link a case file, reproducible example, source, or benchmark.
+  - type: textarea
+    id: behaviour
+    attributes:
+      label: Proposed behaviour
+      description: Describe the smallest useful change.
+    validations:
+      required: true
+  - type: textarea
+    id: failure
+    attributes:
+      label: Failure and abuse cases
+      description: How could this mislead the user, lose provenance, or consume unnecessary tokens?
+    validations:
+      required: true
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Non-negotiable rules
+      options:
+        - label: The original idea remains immutable.
+          required: true
+        - label: AI output remains visibly distinct from user-accepted facts.
+          required: true
+        - label: The user controls source trust and consequential actions.
+          required: true
